@@ -3,6 +3,10 @@ library(duckdb)
 library(CDMConnector)
 library(CodelistGenerator)
 library(CohortCharacteristics)
+library(here)
+
+# you can write this in your .Renviron file to make it permanent
+Sys.setenv("EUNOMIA_DATA_FOLDER"=here("eunomia"))
 
 # create the cdm object
 datasetName <- "GiBleed"
